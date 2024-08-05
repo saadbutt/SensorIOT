@@ -1,0 +1,39 @@
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.Header .book-demo-button,
+.mobile-version .book-demo-button {
+  font-family: "Inter Tight";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 21.78px;
+  color: var(--black-primary);
+  border-radius: 100px;
+  padding: 8px 24px;
+  background-color: var(--green-primary) !important;
+  outline: none !important;
+  border: none !important;
+  text-transform: none;
+}
+
+.mobile-version .book-demo-button {
+  width: 100%;
+}
+
+.Header .header-overlay {
+  background-color: #0a162f;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  /* box-shadow: 0 4px 8px rgba(10, 22, 47, 0.5); */
+  /* box-shadow: 0 0 10px 5px;
+  box-shadow: 0 0 10px 5px rgba(10, 22, 47, 1); */
+}

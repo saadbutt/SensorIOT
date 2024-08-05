@@ -1,0 +1,122 @@
+/* Global Variables  */
+:root {
+  --blue-primary: #0b122d;
+  --blue-secondary: #051224;
+  --blue-text: #9595b2;
+  --blue-block-background: #0c0919;
+  --green-primary: #c9e265;
+  --while-primary: #fff;
+  --black-primary: #000;
+}
+
+body {
+  background-color: var(--blue-primary);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Scandla-Bold";
+  src: url("./assets/fonts/Scandia-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Scandia-Bold.woff2") format("woff");
+}
+
+.global-container {
+  max-width: 1170px;
+  padding: 0px 20px;
+  margin: auto;
+}
+/* 
+.global-block {
+  background-color: var(--blue-block-background);
+  border-radius: 20px;
+  border-width: 3px;
+  border-style: solid;
+
+  border-image: linear-gradient(to bottom, #3d5075, #0a162f) 1;
+} */
+.global-block-wrapper {
+  background: linear-gradient(to bottom, #3d5075, #0a162f) !important;
+  border-radius: 19px !important;
+  padding: 2.5px !important;
+}
+.anchers,
+.anchers:hover {
+  color: var(--while-primary);
+}
+
+.anchers.green {
+  color: var(--green-primary) !important;
+}
+.global-block {
+  background-color: var(--blue-block-background) !important;
+  border-radius: 17px !important;
+  padding: 10px !important;
+}
+
+.global-block-wrapper_top {
+  background: linear-gradient(to top, #3d5075, #0a162f);
+  border-radius: 19px;
+  padding: 2.5px;
+}
+
+.global-block_top {
+  background-color: var(--blue-block-background);
+  border-radius: 17px;
+  padding: 10px;
+}
+.button_primary {
+  background-color: var(--green-primary);
+  text-align: center;
+  outline: none;
+  border: none;
+}
+.button_secondary {
+  background-color: var(--blue-text);
+  outline: none;
+  border: none;
+}
+
+.highlight-text {
+  color: var(--blue-text);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+}

@@ -1,0 +1,206 @@
+.HowItWork {
+  background-color: var(--blue-block-background);
+  margin: 50px 0px;
+  padding: 40px 0px;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.HowItWork .head-content .heading-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.HowItWork .head-content .heading-container h3 {
+  font-size: 40px;
+  line-height: 68px;
+  font-weight: 700;
+  font-family: "Scandla-Bold";
+  background: -webkit-linear-gradient(to right, white 0%, #9595b2 100%);
+  background: linear-gradient(to right, white 0%, #9595b2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.HowItWork .head-content p {
+  color: #fff;
+  font-family: "Inter Tight";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.HowItWork .card_container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch !important;
+  gap: 40px;
+}
+
+.HowItWork .card_container .card_single {
+  flex: 0 0 calc(25% - 26.67px);
+  height: auto !important;
+}
+
+.HowItWork .card_container .card_outer {
+  background-color: var(--black-primary) !important;
+  padding: 0px;
+  position: relative;
+  height: 100% !important;
+  border-radius: 20px;
+}
+
+.HowItWork .item-id {
+  position: absolute;
+  top: 8px;
+  right: 6px;
+  z-index: 1;
+  font-size: 24px;
+  line-height: 29.04px;
+  font-family: "Inter Tight";
+  font-weight: "500";
+}
+
+.HowItWork .card_inner {
+  border-radius: 20px;
+  height: 100% !important;
+  position: relative;
+  padding: 25px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  border-radius: 20px;
+  background-image: url("../../assets/images/card_how_it_work.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.HowItWork .button-container {
+  text-align: end;
+  margin: 30px 0px;
+}
+.HowItWork .card_inner svg {
+  height: 68.83px;
+  width: 59.92px;
+}
+.HowItWork .card_inner .title {
+  font-size: 21px;
+  line-height: 25.04px;
+  color: var(--white-primary);
+  font-family: "Inter Tight";
+  font-weight: 500;
+}
+.HowItWork .card_inner .description {
+  font-size: 16px;
+  line-height: 20.4px;
+  color: var(--white-primary);
+  font-family: "Inter Tight";
+  font-weight: 400;
+  color: #fff !important;
+}
+
+.HowItWork .card_container .card_outer .arrow-icon-container {
+  position: absolute;
+  right: -43px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.HowItWork .card_container .card_single:last-of-type .arrow-icon-container {
+  display: none !important;
+}
+
+.HowItWork .button-container .book-demo-button {
+  font-family: "Inter Tight";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 21.78px;
+  color: var(--black-primary);
+  border-radius: 100px;
+  padding: 8px 24px;
+  text-decoration: none;
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+  .HowItWork .card_container {
+    flex-wrap: wrap;
+    gap: 45px;
+  }
+  .HowItWork .card_container .card_outer .arrow-icon-container {
+    right: auto;
+    left: 50%;
+    bottom: -37px;
+    top: auto;
+    transform: translateX(-50%) rotate(90deg);
+  }
+  .HowItWork .card_container .card_single {
+    flex: 0 0 calc(50% - 26.67px);
+    height: auto !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .HowItWork {
+    padding: 25px 0px;
+    margin: 0px 0px;
+  }
+  .HowItWork .head-content .heading-container h3 {
+    font-size: 32px;
+    line-height: 68px;
+  }
+
+  .HowItWork .head-content p {
+    font-size: 16px;
+    line-height: 19.36px;
+    width: 90%;
+  }
+  .HowItWork .card_container {
+    flex-wrap: wrap;
+    gap: 45px;
+  }
+  .HowItWork .card_container .card_outer .arrow-icon-container {
+    right: auto;
+    left: 50%;
+    bottom: -37px;
+    top: auto;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  .HowItWork .card_inner .title {
+    font-size: 24px;
+    line-height: 24.2px;
+  }
+  .HowItWork .card_inner .description {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+  .HowItWork .card_container .card_single {
+    flex: 0 0 calc(100%);
+    height: auto !important;
+  }
+  .HowItWork .button-container .book-demo-button {
+    display: none;
+  }
+
+  .HowItWork .card_container .card_outer {
+    /* height: 350px !important; */
+    width: 95%;
+    margin: auto;
+  }
+  .HowItWork .item-id {
+    top: 4px;
+    right: 27px;
+  }
+}
