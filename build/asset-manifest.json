@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1a46958.css",
-    "main.js": "/static/js/main.de746ef9.js",
+    "main.css": "/static/css/main.7ea38596.css",
+    "main.js": "/static/js/main.8bde5967.js",
+    "static/media/banner-gif.gif": "/static/media/banner-gif.3c3e33ff2305fd1adf8c.gif",
+    "static/media/our-features-circle-background.png": "/static/media/our-features-circle-background.4ded6170c6ab9e49cafe.png",
+    "static/media/card_how_it_work.png": "/static/media/card_how_it_work.7ece86ac98d2beb927c9.png",
+    "static/media/Scandia-Bold.woff2": "/static/media/Scandia-Bold.f16e08d653f28b08f6e0.woff2",
     "index.html": "/index.html",
-    "main.b1a46958.css.map": "/static/css/main.b1a46958.css.map",
-    "main.de746ef9.js.map": "/static/js/main.de746ef9.js.map"
+    "main.7ea38596.css.map": "/static/css/main.7ea38596.css.map",
+    "main.8bde5967.js.map": "/static/js/main.8bde5967.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1a46958.css",
-    "static/js/main.de746ef9.js"
+    "static/css/main.7ea38596.css",
+    "static/js/main.8bde5967.js"
   ]
 }
