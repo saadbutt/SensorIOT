@@ -29,7 +29,7 @@ export const Banner = () => {
                   Book a demo
                 </a>
                 <a
-                  href="#Features"
+                  href="#Feature"
                   className="learn-more-button button_secondary"
                 >
                   Learn More

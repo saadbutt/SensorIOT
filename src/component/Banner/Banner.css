@@ -89,6 +89,7 @@
     display: block;
     height: fit-content !important;
     z-index: 1;
+    margin-top: 20px;
   }
   .Banner .gif-container img {
     width: 100%;

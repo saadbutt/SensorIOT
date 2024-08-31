@@ -32,7 +32,7 @@ export const OurFeatures = () => {
       icon: <EyeIcon />,
       title: "Security and Privacy",
       description:
-        "Iot Defender permissioned private blockchain network provides unparalleled security and privacy for user IoT data, ensuring that only authorized participants have access.",
+        "IoT Defender permissioned private blockchain network provides unparalleled security and privacy for user IoT data, ensuring that only authorized participants have access.",
     },
     {
       id: "04",
@@ -46,7 +46,7 @@ export const OurFeatures = () => {
       icon: <DatabaseIcon />,
       title: "Enhanced Data Transparency",
       description:
-        "By utilizing blockchain technology, Iot Defender ensures transparent and verifiable data transactions.",
+        "By utilizing blockchain technology, IoT Defender ensures transparent and verifiable data transactions.",
     },
     {
       id: "04",
@@ -57,7 +57,7 @@ export const OurFeatures = () => {
     },
   ];
   return (
-    <div className="OurFeatures">
+    <div className="OurFeatures" id="Feature">
       <div className="global-container">
         <div className="head-content">
           <div className="heading-container">

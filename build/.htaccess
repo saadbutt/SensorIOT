@@ -1,9 +1,0 @@
-<IfModule mod_rewrite.c>
-  RewriteEngine On RewriteBase / RewriteRule ^index\.html$ - [L] RewriteCond
-  %{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d RewriteCond
-  %{REQUEST_FILENAME} !-l RewriteRule . /index.html [L]
-</IfModule>
-RewriteEngine on RewriteCond %{HTTPS} off RewriteCond %{HTTP:X-Forwarded-SSL}
-!on RewriteCond %{HTTP_HOST} ^www\.iotdefender/\.io$ [OR] RewriteCond
-%{HTTP_HOST} ^www\.iotdefender\.io$ RewriteRule ^/?$
-"https\:\/\/www\.iotdefender\.io\/" [R=301,L]

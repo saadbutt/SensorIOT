@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-import { HashLink } from "react-router-hash-link";
 
 const TermsConditions = () => {
   return (

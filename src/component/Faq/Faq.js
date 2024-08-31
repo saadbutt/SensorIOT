@@ -36,7 +36,7 @@ export const Faq = () => {
     {
       question: "Is IoT Defender difficult to set up?",
       answer:
-        "No, IoT Defender is user-friendly and comes with straightforward installation guides. It offers quick setup options to get your IoT devices protected with minimal hassle.",
+        "No, IoT Defender is user-friendly and comes with straightforward installation guides. It offers quick setup options to get your IoT devices protected with minimal hassle.",
     },
     {
       question: "Does IoT Defender provide real-time monitoring?",
@@ -54,7 +54,7 @@ export const Faq = () => {
         "Absolutely. IoT Defender provides a centralized dashboard where you can monitor and manage multiple IoT devices, making it easy to keep track of the security status across your entire network.",
     },
     {
-      question: "Is IoT Defender suitable for both personal and business use",
+      question: "Is IoT Defender suitable for both personal and business use?",
       answer:
         "Yes, IoT Defender is designed to be versatile, catering to both personal IoT devices and large-scale business deployments.",
     },
@@ -67,10 +67,12 @@ export const Faq = () => {
 
   const [allExpanded, setAllExpanded] = useState(false);
   const [expandedPanels, setExpandedPanels] = useState([0]);
+  const [showAll, setShowAll] = useState(false);
 
   const handleExpandAll = () => {
     setAllExpanded((prev) => !prev);
     setExpandedPanels(allExpanded ? [] : faqData.map((_, index) => index));
+    setShowAll((prev) => !prev);
   };
 
   const handleToggle = (index) => {
@@ -83,14 +85,15 @@ export const Faq = () => {
     });
   };
 
+  const displayedFaqs = showAll ? faqData : faqData.slice(0, 4);
+
   return (
     <Box
       className={"global-container"}
       sx={{
-        // maxWidth: { xs: "1400px !important", md: "1001px" },
         padding: "20px",
         margin: "auto",
-        overflow: "hidden", // Ensures content does not overflow
+        overflow: "hidden",
       }}
       id="FAQ"
     >
@@ -115,25 +118,22 @@ export const Faq = () => {
           FAQ
         </Typography>
       </Box>
-      {/* <Box className="global-block-wrapper"> */}
-
-      {/* <Box className="global-block"> */}
 
       <Box>
-        {faqData?.map((item, index) => (
+        {displayedFaqs.map((item, index) => (
           <Box
             className="global-block-wrapper"
             sx={{
               background: "transparent",
               mb: 2,
             }}
+            key={index}
           >
             <Accordion
               sx={{
                 background: "transparent",
                 p: 1,
               }}
-              key={index}
               expanded={expandedPanels.includes(index)}
               className="global-block"
             >
@@ -194,8 +194,6 @@ export const Faq = () => {
             lineHeight: "21.78px",
             fontWeight: "700",
             padding: "6px 24px",
-            // width: "167.1px",
-            // height: "46px",
             fontFamily: "Inter Tight",
             fontWeight: 400,
             fontSize: { xs: "15px", md: "15px" },
@@ -204,7 +202,7 @@ export const Faq = () => {
           }}
           onClick={handleExpandAll}
         >
-          {allExpanded ? "Close all" : "View all"}
+          {showAll ? "Close all" : "View all"}
         </Button>
       </Box>
     </Box>

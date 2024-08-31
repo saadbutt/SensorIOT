@@ -90,12 +90,12 @@ export const Footer = () => {
                 }}
               >
                 {[
-                  { name: "Home", href: "#data-security" },
-                  { name: "Features", href: "#Features" },
-                  { name: "How it works", href: "#HowItWorks" },
-                  { name: "Membership", href: "#Membership" },
-                  { name: "FAQ", href: "#FAQ" },
-                  { name: "Book a demo", href: "#GetInTouch" },
+                  { name: "Home", href: "/#data-security" },
+                  { name: "Features", href: "/#Feature" },
+                  { name: "How it works", href: "/#HowItWorks" },
+                  { name: "Membership", href: "/#Membership" },
+                  { name: "FAQ", href: "/#FAQ" },
+                  { name: "Book a demo", href: "/#GetInTouch" },
                 ].map((link, index) => (
                   <a href={link.href} style={{ textDecoration: "none" }}>
                     <Typography
@@ -199,7 +199,7 @@ export const Footer = () => {
               </Box>
               <Box
                 component="a"
-                href="https://discord.gg/Sfmx6bvv"
+                href="https://discord.gg/eFn4Jdvq5f"
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
@@ -265,7 +265,6 @@ export const Footer = () => {
             >
               <a
                 href="/Privacy-policy"
-                target="_blank"
                 style={{ color: "#fff" }}
               >
                 Privacy Policy
@@ -273,7 +272,6 @@ export const Footer = () => {
               -{" "}
               <a
                 href="/Terms-and-conditions"
-                target="_blank"
                 style={{ color: "#fff" }}
               >
                 Terms & Conditions

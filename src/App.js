@@ -15,6 +15,8 @@ import { useEffect, useState } from "react";
 import SplashScreen from "./component/SplashScreen/SplashScreen";
 import PrivacyPolicy from "./component/PrivacyPolicy/PrivacyPolicy";
 import TermAndConditions from "./component/TermAndConditions/TermAndConditions";
+import SignUp from "./component/SignUp/SignUp";
+import CookieNotification from "./component/CookieNotification";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -25,6 +27,31 @@ function App() {
       setShowSplash(false);
       if (location.hash === "#FAQ") {
         const element = document.getElementById("FAQ");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (location.hash === "#Membership") {
+        const element = document.getElementById("Membership");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (location.hash === "#HowItWorks") {
+        const element = document.getElementById("HowItWorks");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (location.hash === "#Feature") {
+        const element = document.getElementById("Feature");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (location.hash === "#Feature") {
+        const element = document.getElementById("Feature");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (location.hash === "#GetInTouch") {
+        const element = document.getElementById("GetInTouch");
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
@@ -60,8 +87,11 @@ function App() {
 
         <Route path="/Privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/Terms-and-conditions" element={<TermAndConditions />} />
+        <Route path="/sign-up" element={<SignUp />} />
       </Routes>
       <Footer />
+      <CookieNotification />
+      
     </div>
   );
 }

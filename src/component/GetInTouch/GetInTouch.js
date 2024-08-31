@@ -6,12 +6,15 @@ import TwitterSvg from "../../assets/svgs/twitter";
 import LinkedInSvg from "../../assets/svgs/linkedIn";
 import "./GetInTouch.css";
 import Discord from "../../assets/svgs/discord";
+import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const GetInTouch = () => {
   const [formValues, setFormValues] = useState({
     name: "",
     email: "",
-    telephone: "",
+    phone: "",
     description: "",
   });
 
@@ -23,12 +26,30 @@ export const GetInTouch = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formValues);
+     try {
+      const response = await axios.post("https://backend.iotdefender.io/send-email", formValues);
+
+      toast.success(response?.data?.message, {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+    } catch (error) {
+      console.error("Error sending data:", error);
+    }
   };
   return (
+    
     <Box sx={{ background: "#0c0919" }} id={"GetInTouch"}>
+      <ToastContainer />
+
       <Box className="global-container" sx={{ paddingBlock: "80px" }}>
         <Grid container spacing={4} justifyContent="start" textAlign={"start"}>
           <Grid item xs={12} md={4}>
@@ -166,7 +187,7 @@ export const GetInTouch = () => {
               </Box>
               <Box
                 component="a"
-                href="https://discord.gg/Sfmx6bvv"
+                href="https://discord.gg/eFn4Jdvq5f"
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
@@ -266,11 +287,11 @@ export const GetInTouch = () => {
                           width: "775px !important",
                         },
                       }}
-                      name="telephone"
-                      label="Telephone"
+                      name="phone"
+                      label="phone"
                       variant="filled"
                       fullWidth
-                      value={formValues.telephone}
+                      value={formValues.phone}
                       onChange={handleChange}
                       sx={{
                         mr: 2,
