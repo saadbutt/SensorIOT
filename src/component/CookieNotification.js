@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const CookieNotification = () => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const hasAgreed = localStorage.getItem('cookieAgreement');
+    if (!hasAgreed) {
+      setIsVisible(true);
+    }
+  }, []);
 
   const handleAgree = () => {
-    // Hide the notification when the user clicks "Agree"
+    // Set a flag in localStorage when the user agrees
+    localStorage.setItem('cookieAgreement', 'true');
     setIsVisible(false);
   };
 

@@ -19,6 +19,7 @@ export const MembershipPlan = () => {
       currency: "$",
       price: 0,
       period: "month",
+      link:"https://app.iotdefender.io/",
       items: [
         {
           title: "5000 API Calls",
@@ -30,7 +31,7 @@ export const MembershipPlan = () => {
           title: "10 Sensors",
         },
       ],
-      buttonText: "Contact Us",
+      buttonText: "Get Started",
     },
     {
       id: 2,
@@ -41,6 +42,7 @@ export const MembershipPlan = () => {
       currency: "$",
       price: 0,
       period: "month",
+      link:"https://app.iotdefender.io/",
       items: [
         {
           title: "25,000 API Calls",
@@ -52,7 +54,7 @@ export const MembershipPlan = () => {
           title: "100 Sensors",
         },
       ],
-      buttonText: "Contact Us",
+      buttonText: "Get Started",
     },
     {
       id: 3,
@@ -63,6 +65,7 @@ export const MembershipPlan = () => {
       currency: "$",
       price: 0,
       period: "month",
+      link:"https://app.iotdefender.io/",
       items: [
         {
           title: "50,000 API Calls",
@@ -74,7 +77,7 @@ export const MembershipPlan = () => {
           title: "250 Sensors",
         },
       ],
-      buttonText: "Contact Us",
+      buttonText: "Get Started",
     },
     {
       id: 4,
@@ -85,6 +88,7 @@ export const MembershipPlan = () => {
       currency: "$",
       price: 0,
       period: "month",
+      link:"https://app.iotdefender.io/",
       items: [
         {
           title: "100,000 API Calls",
@@ -96,7 +100,7 @@ export const MembershipPlan = () => {
           title: "500 Sensors",
         },
       ],
-      buttonText: "Contact Us",
+      buttonText: "Get Started",
     },
     {
       id: 5,
@@ -107,6 +111,7 @@ export const MembershipPlan = () => {
       currency: "$",
       price: 0,
       period: "month",
+      link:"https://www.iotdefender.io/#GetInTouch",
       items: [
         {
           title: "1,000,000+ API Calls",
@@ -245,7 +250,8 @@ export const MembershipPlan = () => {
                         </div>
                         <div className="button-container">
                           <a
-                            href="#GetInTouch"
+                            href={item?.link}
+                            target="_blank"
                             className="button_primary get-started-button"
                           >
                             {item?.buttonText}
