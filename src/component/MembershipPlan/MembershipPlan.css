@@ -352,3 +352,11 @@ TOOLTIP CSS
 .popular .info-block.member a span {
   color: #000;
 }
+
+.price-2{
+  font-size: 50px !important;
+}
+
+.price-3{
+  font-size: 45px !important;
+}

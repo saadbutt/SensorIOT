@@ -12,12 +12,12 @@ export const MembershipPlan = () => {
   const MembershipData = [
     {
       id: 1,
-      title: "Free",
+      title: "Starter",
       description:
         "Get started for free with up to 5000 API calls! Suitable for Students & Enthusiasts.",
       type: "Non Popular",
       currency: "$",
-      price: 0,
+      price: "Free",
       period: "month",
       link:"https://app.iotdefender.io/",
       items: [
@@ -40,7 +40,7 @@ export const MembershipPlan = () => {
         "Add up to 10 devices at 10 sensors each with 25,000 API calls. Suitable for Small Corporations.",
       type: "Non Popular",
       currency: "$",
-      price: 0,
+      price: 25,
       period: "month",
       link:"https://app.iotdefender.io/",
       items: [
@@ -63,7 +63,7 @@ export const MembershipPlan = () => {
         "Add up to 25 devices at 10 sensors each with 50,000 API calls. Suitable for Medium-sized Industries.",
       type: "Popular",
       currency: "$",
-      price: 0,
+      price: 45,
       period: "month",
       link:"https://app.iotdefender.io/",
       items: [
@@ -86,7 +86,7 @@ export const MembershipPlan = () => {
         "Add up to 50 devices at 10 sensors each with 100,000 API calls. Suitable for Large Industries.",
       type: "Non Popular",
       currency: "$",
-      price: 0,
+      price: 85,
       period: "month",
       link:"https://app.iotdefender.io/",
       items: [
@@ -206,9 +206,22 @@ export const MembershipPlan = () => {
                           </div>
                           <div className="description">{item?.description}</div>
                           <div className="price-container">
+                            {item?.title === "Starter" ?
+                             <>
+                              <span className="price price-2">{item?.price}</span>
+                             </>
+                            : item?.title === "Enterprise" ? 
+                              <>
+                                <span className="price price-3"> Get Quote </span>
+                              </>
+                            :
+                            <>
                             <span className="currency">{item?.currency}</span>
                             <span className="price">{item?.price}</span>
                             <span className="period">/{item?.period}</span>
+                            </>
+                            }
+                            
                           </div>
                         </div>
                         <div className="card-bottom">
