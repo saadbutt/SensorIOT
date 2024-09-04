@@ -44,7 +44,7 @@ const Header = () => {
     { text: "Features", linkTo: "/#Feature" },
     { text: "Membership", linkTo: "/#Membership" },
     { text: "FAQ", linkTo: "/#FAQ" },
-    { text: "Sign In", linkTo: "/sign-up" },
+    { text: "Sign In", linkTo: "https://app.iotdefender.io/" },
     { text: "Book a demo", linkTo: "/#GetInTouch" },
   ];
 
@@ -53,7 +53,7 @@ const Header = () => {
     { text: "Features", linkTo: "/#Feature" },
     { text: "Membership", linkTo: "/#Membership" },
     { text: "FAQ", linkTo: "/#FAQ" },
-    { text: "Sign In", linkTo: "/sign-up" },
+    { text: "Sign In", linkTo: "https://app.iotdefender.io/" },
   ];
 
   return (
