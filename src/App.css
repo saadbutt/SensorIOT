@@ -133,6 +133,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 575.98px) {
+  .Featured .feature-block .bottom-text {
+    font-family: "Inter Tight";
+    font-size: 18px;
+    line-height: 21.78px;
+    padding-top: 20px;
+    border-top: 1px solid var(--while-primary);
+    margin-left: 0px;
+  }
+  
 }
 
 

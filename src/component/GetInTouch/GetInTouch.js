@@ -28,7 +28,7 @@ export const GetInTouch = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-     try {
+    try {
       const response = await axios.post("https://backend.iotdefender.io/send-email", formValues);
 
       toast.success(response?.data?.message, {
@@ -40,13 +40,13 @@ export const GetInTouch = () => {
         draggable: true,
         progress: undefined,
         theme: "light",
-        });
+      });
     } catch (error) {
       console.error("Error sending data:", error);
     }
   };
   return (
-    
+
     <Box sx={{ background: "#0c0919" }} id={"GetInTouch"}>
       <ToastContainer />
 
@@ -354,6 +354,7 @@ export const GetInTouch = () => {
                 </form>
               </Box>
             </Box>
+
             <Box
               sx={{
                 display: { xs: "flex", md: "none" },
@@ -367,6 +368,7 @@ export const GetInTouch = () => {
                   display: "flex",
                   alignItems: "center",
                   mb: 4,
+                  width: "100%", // Set width to 100%
                 }}
               >
                 <Wolfberryllc />
@@ -383,6 +385,7 @@ export const GetInTouch = () => {
                   support@wolfberryllc.com
                 </Typography>
               </Box>
+
               <Box
                 component="a"
                 href="https://x.com/wolfberryllc"
@@ -393,7 +396,9 @@ export const GetInTouch = () => {
                   alignItems: "center",
                   mb: 4,
                   textDecoration: "underline",
+                  width: "100%", // Set width to 100%
                 }}
+                className="ok"
               >
                 <TwitterSvg />
                 <Typography
@@ -410,6 +415,7 @@ export const GetInTouch = () => {
                   wolfberryllc
                 </Typography>
               </Box>
+
               <Box
                 component="a"
                 href="https://www.linkedin.com/company/wolfberryllc/"
@@ -419,7 +425,9 @@ export const GetInTouch = () => {
                   display: "flex",
                   alignItems: "center",
                   mb: 4,
+                  width: "100%", // Set width to 100%
                 }}
+                className="ok"
               >
                 <LinkedInSvg />
                 <Typography
@@ -436,6 +444,7 @@ export const GetInTouch = () => {
                   wolfberryllc
                 </Typography>
               </Box>
+
             </Box>
           </Grid>
         </Grid>
