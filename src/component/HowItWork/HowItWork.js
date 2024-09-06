@@ -20,20 +20,20 @@ export const HowItWork = () => {
     {
       id: "02",
       icon: <MintIcon />,
-      title: "Heading: Get API Key",
+      title: "Get API Key",
       description: "Use this API Secret Key for making authorized API calls. ",
     },
     {
       id: "03",
       icon: <MonitorIcon />,
-      title: "Heading: Get API Code",
+      title: "Get API Code",
       description:
         "Copy and use your JSON formatted API code from IoT defender Scratch-Pad request section. ",
     },
     {
       id: "04",
       icon: <TempringIcon />,
-      title: "Heading: Mint & Retrieve your Data",
+      title: "Mint & Retrieve your Data",
       description:
         "Use IoT defender APIs in your software for uploading IoT generated values. ",
     },
