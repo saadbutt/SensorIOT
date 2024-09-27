@@ -2,6 +2,7 @@
   "name": "iot-identifier",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
@@ -12,11 +13,13 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.6",
+    "babel-register": "^6.26.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router": "^6.26.0",
     "react-router-dom": "^6.25.1",
     "react-router-hash-link": "^2.4.3",
+    "react-router-sitemap": "^1.2.0",
     "react-scripts": "5.0.1",
     "react-toastify": "^10.0.5",
     "swiper": "^11.1.5",
@@ -27,6 +30,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "generate-sitemap": "node generate-sitemap.js",
     "serve": "serve -s build"
   },
   "eslintConfig": {
@@ -48,6 +52,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
     "generate-robotstxt": "^8.0.3"
   }
 }
