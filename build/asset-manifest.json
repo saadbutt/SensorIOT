@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.a7464b08.css",
-    "main.js": "/static/js/main.4de61d6b.js",
+    "main.js": "/static/js/main.171d5ea2.js",
     "static/media/banner-gif.gif": "/static/media/banner-gif.3c3e33ff2305fd1adf8c.gif",
     "static/media/our-features-circle-background.png": "/static/media/our-features-circle-background.4ded6170c6ab9e49cafe.png",
     "static/media/card_how_it_work.png": "/static/media/card_how_it_work.7ece86ac98d2beb927c9.png",
     "static/media/Scandia-Bold.woff2": "/static/media/Scandia-Bold.f16e08d653f28b08f6e0.woff2",
     "index.html": "/index.html",
     "main.a7464b08.css.map": "/static/css/main.a7464b08.css.map",
-    "main.4de61d6b.js.map": "/static/js/main.4de61d6b.js.map"
+    "main.171d5ea2.js.map": "/static/js/main.171d5ea2.js.map"
   },
   "entrypoints": [
     "static/css/main.a7464b08.css",
-    "static/js/main.4de61d6b.js"
+    "static/js/main.171d5ea2.js"
   ]
 }

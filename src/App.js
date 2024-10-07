@@ -87,7 +87,7 @@ function App() {
 
         <Route path="/Privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/Terms-and-conditions" element={<TermAndConditions />} />
-        <Route path="/sign-up" element={<SignUp />} />
+        {/* <Route path="/sign-up" element={<SignUp />} /> */}
       </Routes>
       <Footer />
       <CookieNotification />
