@@ -252,7 +252,7 @@ export const Footer = () => {
                 fontFamily: "Inter Tight",
               }}
             >
-              © 2024 IoT Defender
+              © {new Date().getFullYear()} IoT Defender
             </Typography>
             <Typography
               sx={{

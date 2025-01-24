@@ -447,7 +447,7 @@ const PrivacyPolicy = () => {
               fontFamily: "Inter Tight",
             }}
           >
-            © 2024 Wolfberry LLC
+            © {new Date().getFullYear()} Wolfberry LLC
           </Typography>
         </Box>
       </div>
