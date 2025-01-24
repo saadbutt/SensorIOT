@@ -217,7 +217,7 @@
                 <a style="color: #535353;padding-top: 20px !important;" href="FAQ.html">FAQ |</a>
                 <a style="color: #535353;padding-top: 20px !important;" href="Privacy-policy.html">Privacy Policy |</a>
                 <a style="color: #535353;padding-top: 20px !important;" href="Terms-and-conditions.html">Terms and Conditions</a>
-                <p class="copyrights px-0 py-5" style="padding-top: 20px !important;">&copy; 2024 Wolfberry LLC</p>
+                <p class="copyrights px-0 py-5" style="padding-top: 20px !important;">&copy; <span id="current-year"></span> Wolfberry LLC</p>
                 
             </div>
         </div>
@@ -225,6 +225,16 @@
 </footer>
 <!-- Footer ends -->
 
+    <script>
+        // Get the current year dynamically
+        const currentYear = new Date().getFullYear();
+
+        // Set the year in the "Last Updated" section
+        document.getElementById('last-updated').textContent = `${currentYear}`;
+
+        // Set the year in the copyright footer
+        document.getElementById('current-year').textContent = `${currentYear}`;
+    </script>
 
 <!-- Plugin JavaScript -->
 <script src="vendor/js/bundle.min.js"></script>
