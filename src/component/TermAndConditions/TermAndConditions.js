@@ -426,7 +426,7 @@ const TermsConditions = () => {
             marginBlock: "10px",
           }}
         >
-          © 2024 Wolfberry LLC
+          © {new Date().getFullYear()} Wolfberry LLC
         </Typography>
       </Box>
     </div>
